@@ -2,7 +2,7 @@ body{
     background: url(https://static.vecteezy.com/system/resources/previews/010/839/424/original/aesthetic-minimal-cute-pastel-pink-wallpaper-with-abstract-checkers-checkerboard-decoration-backdrop-illustration-perfect-for-wallpaper-backdrop-postcard-background-banner-vector.jpg) top / cover;
     color: white;
 }
-.wrapper{
+.wrapper, .wrapper-demo{
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -81,4 +81,14 @@ body{
         transform: translateX(0);
         opacity: 1;
     }
+}
+.title{
+    color: palevioletred;
+}
+.view{
+    opacity: 0;
+}
+.view.hidden{
+    opacity: 1;
+    @include transition
 }
